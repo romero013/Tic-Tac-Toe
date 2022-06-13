@@ -35,13 +35,11 @@ int main() {
 			if (turn == 1) {
 				print_field();
 				turn_X();
-				turn == 2;
 			}
 			else
 				if (turn == 2) {
 				print_field();
 				turn_0();
-				turn == 1;
 			}
 		}
 	}
@@ -179,7 +177,7 @@ void turn_0() {
 	} while (C < 1 || C > COLS);
 	R--; C--;
 	field[R][C] = '0';
-	if (checkX(R, C))
+	if (check0(R, C))
 		throw '0';
 	turn = 1;
 	system("cls");
